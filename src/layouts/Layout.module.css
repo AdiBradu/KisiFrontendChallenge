@@ -1,5 +1,11 @@
 .layout {
-  width: 100px;
-  height: 100px;
-  background-color: aqua;
+  background-color: var(--warm-gray);
+  margin-top: 98px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  width: 90%;
+  height: 75%;
 }

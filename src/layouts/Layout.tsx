@@ -1,6 +1,6 @@
 import React from 'react';
-import './Layout.module.css';
+import styles from './Layout.module.css';
 
 export const Layout: React.FC = () => {
-  return <div className="layout">Layout</div>;
+  return <div className={styles.layout}></div>;
 };
