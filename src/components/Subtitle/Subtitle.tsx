@@ -2,8 +2,8 @@ import React from 'react';
 // types
 import { TextProps } from '../../types/types';
 // styles
-import styles from './Subtitle.module.css';
+import './Subtitle.scss';
 
 export const Subtitle: React.FC<TextProps> = ({ text }) => {
-  return <h2 className={styles.subtitle}>{text}</h2>;
+  return <h2 className="subtitle">{text}</h2>;
 };

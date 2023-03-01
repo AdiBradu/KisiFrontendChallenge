@@ -1,8 +1,8 @@
 import React from 'react';
-import styles from './Layout.module.css';
+import './Layout.scss';
 // types
 import { LayoutProps } from '../types/types';
 
 export const Layout: React.FC<LayoutProps> = ({ children }) => {
-  return <section className={styles.layout}>{children}</section>;
+  return <section className="layout">{children}</section>;
 };

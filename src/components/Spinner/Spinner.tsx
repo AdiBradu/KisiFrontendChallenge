@@ -1,10 +1,10 @@
 import React from 'react';
 // styles
-import styles from './Spinner.module.css';
+import './Spinner.scss';
 
 export const Spinner: React.FC = () => {
   return (
-    <div className={styles.ldsRoller}>
+    <div className="ldsRoller">
       <div></div>
       <div></div>
       <div></div>

@@ -1,4 +1,4 @@
-import { ReactComponentElement, ReactElement, ReactNode } from 'react';
+import { ReactElement, ReactNode } from 'react';
 
 export interface Routes {
   path: string;
@@ -35,5 +35,4 @@ export interface ImageProps {
 
 export interface ButtonProps {
   onClick: () => void;
-  classe: string;
 }

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 // styles
-import styles from './Mosaic.module.css';
+import './Mosaic.scss';
 // components
 import { Layout } from '../../layouts/Layout';
 import { Card } from '../../components/Card/Card';
@@ -56,9 +56,9 @@ export const MosaicPage: React.FC = () => {
       ) : (
         <Spinner />
       )}
-      <Title text={'Connect people & spaces'} classe={styles.title} />
-      <div className={styles.load}>
-        <Button classe={styles.loadButton} onClick={handleLoadMore} />
+      <Title text={'Connect people & spaces'} classe="title" />
+      <div className="load">
+        <Button onClick={handleLoadMore} />
       </div>
     </Layout>
   );

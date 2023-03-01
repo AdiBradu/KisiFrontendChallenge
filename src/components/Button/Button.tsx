@@ -6,7 +6,7 @@ import { ButtonProps } from '../../types/types';
 // styles
 import './Button.scss';
 
-export const Button: React.FC<ButtonProps> = ({ onClick, classe }) => {
+export const Button: React.FC<ButtonProps> = ({ onClick }) => {
   return (
     <button type="button" className="loadButton" onClick={onClick}>
       <Paragraph text={'Load more'} />
