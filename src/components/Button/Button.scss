@@ -1,0 +1,12 @@
+.loadButton {
+  background-color: var(--connect-blue);
+  padding: 6px 20px;
+  border-radius: 25px;
+  white-space: nowrap;
+  border-color: transparent;
+  cursor: pointer;
+  display: inline-flex;
+  &:hover {
+    opacity: 0.8;
+  }
+}

@@ -1,4 +1,4 @@
-import React from 'react';
+import { ReactComponentElement, ReactElement, ReactNode } from 'react';
 
 export interface Routes {
   path: string;
@@ -6,9 +6,34 @@ export interface Routes {
 }
 
 export interface LayoutProps {
-  children?: JSX.Element | JSX.Element[];
+  children?: ReactElement | ReactNode;
 }
 
 export interface TextProps {
   text?: string;
+  classe?: string;
+}
+
+export interface CardProps {
+  key?: string;
+  src?: string;
+  alt?: string;
+  subtitle?: string;
+  description?: string;
+}
+
+export interface ImageProps {
+  id?: string;
+  alt_description?: string | undefined;
+  urls?: {
+    small: string | undefined;
+  };
+  user?: {
+    first_name: string | undefined;
+  };
+}
+
+export interface ButtonProps {
+  onClick: () => void;
+  classe: string;
 }

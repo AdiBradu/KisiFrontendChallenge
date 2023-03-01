@@ -1,17 +1,12 @@
 import axios from 'axios';
-import * as dotenv from 'dotenv';
-dotenv.config();
 
-export const getPhotos = async (per_page: number): Promise<[] | undefined> => {
+export const getPhotos = async (page: number): Promise<[] | undefined> => {
   try {
-    const response = await axios.post(
-      'http://localhost:5050/upcomings',
-      {
-        per_page: per_page,
-      },
+    const response = await axios.get(
+      `https://api.unsplash.com/photos?per_page=7&page=${page}`,
       {
         headers: {
-          Authorization: process.env.UNSPLASH_ACCESS_KEY,
+          Authorization: `Client-ID ${import.meta.env.VITE_UNSPLASH_ACCESS_KEY}`,
         },
       },
     );

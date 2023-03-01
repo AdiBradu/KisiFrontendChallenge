@@ -4,5 +4,5 @@ import styles from './Layout.module.css';
 import { LayoutProps } from '../types/types';
 
 export const Layout: React.FC<LayoutProps> = ({ children }) => {
-  return <div className={styles.layout}>{children}</div>;
+  return <section className={styles.layout}>{children}</section>;
 };
