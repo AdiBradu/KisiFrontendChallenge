@@ -1,11 +1,11 @@
 .layout {
-  background-color: var(--warm-gray);
+  /* background-color: var(--warm-gray); */
   margin-top: 98px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
   grid-column-gap: 20px;
   grid-row-gap: 20px;
-  width: 90%;
-  height: 75%;
+  width: 1300px;
+  height: 768px;
 }

@@ -1,0 +1,4 @@
+.paragraph {
+  color: var(--pure-white);
+  text-overflow: ellipsis;
+}
