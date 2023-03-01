@@ -1,0 +1,26 @@
+h1 {
+  font-family: var(--kisi-digital);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: calc(2rem * 1.38);
+  letter-spacing: -0.04em;
+}
+
+h2 {
+  font-family: var(--kisi-digital);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: calc(1.25rem * 1.2);
+  letter-spacing: -0.04em;
+}
+
+p {
+  font-family: var(--kisi-digital);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: calc(1rem * 1.5);
+  letter-spacing: -0.015em;
+}
