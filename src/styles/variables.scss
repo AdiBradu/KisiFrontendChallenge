@@ -16,5 +16,30 @@ $kisi-digital: 'Inter', sans-serif;
 /* media queries */
 $sm: 600px;
 $md: 768px;
-$lg: 992px;
-$xl: 1440px;
+$lg: 1440px;
+
+@mixin for-phone-only {
+  @media (max-width: $sm) {
+    @content;
+  }
+}
+@mixin for-tablet-portrait-up {
+  @media (min-width: $sm) and (max-width: $md) {
+    @content;
+  }
+}
+@mixin for-phone-and-tablet-portrait {
+  @media (max-width: $md) {
+    @content;
+  }
+}
+@mixin for-tablet-landscape-up {
+  @media (min-width: $md) {
+    @content;
+  }
+}
+@mixin for-desktop-up {
+  @media (min-width: $lg) {
+    @content;
+  }
+}

@@ -1,47 +1,41 @@
 @import '../../styles/variables.scss';
+
 .title {
-  grid-row: 1 / span 1;
-  grid-column: 1 / span 12;
   color: $pure-white;
   display: flex;
-  align-items: flex-end;
+  @include for-phone-and-tablet-portrait {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 12;
+    align-items: flex-end;
+  }
+  @include for-tablet-landscape-up {
+    grid-row: 1 / span 2;
+    grid-column: 1 / span 7;
+    align-items: flex-end;
+  }
+  @include for-desktop-up {
+    grid-row: 1 / span 2;
+    grid-column: 1 / span 4;
+    align-items: flex-end;
+  }
 }
 
 .load {
-  grid-row: 9 / span 1;
-  grid-column: 1 / span 12;
   display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-@media screen and (min-width: $md) {
-  .title {
-    grid-row: 1 / span 2;
-    grid-column: 1 / span 7;
-    color: $pure-white;
-    display: flex;
-    align-items: flex-end;
+  @include for-phone-and-tablet-portrait {
+    grid-row: 9 / span 1;
+    grid-column: 1 / span 12;
+    align-items: center;
+    justify-content: center;
   }
-  .load {
+  @include for-tablet-landscape-up {
     grid-row: 12 / span 1;
     grid-column: 10 / span 3;
     justify-content: flex-start;
   }
-}
-
-@media screen and (min-width: $xl) {
-  .title {
-    grid-row: 1 / span 2;
-    grid-column: 1 / span 4;
-    color: $pure-white;
-  }
-
-  .load {
+  @include for-desktop-up {
     grid-row: 11 / span 1;
     grid-column: 10 / span 3;
-    display: flex;
     align-items: flex-start;
-    justify-content: flex-start;
   }
 }
