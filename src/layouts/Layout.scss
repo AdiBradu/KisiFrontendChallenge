@@ -12,12 +12,13 @@
   @media screen and (min-width: $md) {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(16, 1fr);
+    max-width: 800px;
   }
   @media screen and (min-width: $xl) {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
     // margin: 98px 0px;
-    width: 1300px;
+    max-width: 1300px;
     height: 768px;
   }
 }

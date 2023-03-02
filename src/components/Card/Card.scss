@@ -1,7 +1,6 @@
 @import '../../styles/variables.scss';
 .card {
   position: relative;
-  border-radius: 4px;
   &:hover {
     cursor: pointer;
     .front {
