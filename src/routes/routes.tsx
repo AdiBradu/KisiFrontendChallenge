@@ -6,11 +6,11 @@ import { Routes } from '../types/types';
 
 export const publicRoutes: Routes[] = [
   {
-    path: '*',
-    element: <NoPage />,
+    path: '/kisifrontendchallenge',
+    element: <MosaicPage />,
   },
   {
-    path: '/',
-    element: <MosaicPage />,
+    path: '*',
+    element: <NoPage />,
   },
 ];
