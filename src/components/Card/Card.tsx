@@ -14,7 +14,13 @@ export const Card: React.FC<CardProps> = ({ src, alt, subtitle, description }) =
       <div className="front">
         <Subtitle text={subtitle} />
         <ChevronIcon />
-        <img src={src} alt={alt} width="100%" height="100%" loading="lazy" />
+        <img
+          src={src}
+          alt={alt ? alt : 'image in mosaic'}
+          width="100%"
+          height="100%"
+          loading="lazy"
+        />
       </div>
       <div className="back">
         <Subtitle text={subtitle} />
