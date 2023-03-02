@@ -1,6 +1,6 @@
 import React from 'react';
 // styles
-import './App.css';
+import './App.scss';
 // key generator
 import uniqid from 'uniqid';
 // routing

@@ -1,5 +1,7 @@
+@import '../styles/variables.scss';
+
 h1 {
-  font-family: var(--kisi-digital);
+  font-family: $kisi-digital;
   font-style: normal;
   font-weight: 400;
   font-size: 2rem;
@@ -8,7 +10,7 @@ h1 {
 }
 
 h2 {
-  font-family: var(--kisi-digital);
+  font-family: $kisi-digital;
   font-style: normal;
   font-weight: 400;
   font-size: 1.25rem;
@@ -17,7 +19,7 @@ h2 {
 }
 
 p {
-  font-family: var(--kisi-digital);
+  font-family: $kisi-digital;
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;

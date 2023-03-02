@@ -24,14 +24,11 @@ export const MosaicPage: React.FC = () => {
     { enabled: true },
   );
 
-  console.log(data);
-
   useEffect(() => {
     data && setImages([...data]);
   }, [data]);
 
   const handleLoadMore = () => {
-    console.log('click');
     setPage((prevstate) => prevstate + 1);
     refetch();
   };
@@ -56,7 +53,9 @@ export const MosaicPage: React.FC = () => {
       ) : (
         <Spinner />
       )}
-      <Title text={'Connect people & spaces'} classe="title" />
+      <div className="title">
+        <Title text={'Connect people & spaces'} />
+      </div>
       <div className="load">
         <Button onClick={handleLoadMore} />
       </div>

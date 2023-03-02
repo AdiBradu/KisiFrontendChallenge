@@ -1,6 +1,7 @@
+@import '../../styles/variables.scss';
 .subtitle {
   position: relative;
-  color: var(--pure-white);
+  color: $pure-white;
   text-transform: capitalize;
   z-index: 100;
 }

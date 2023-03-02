@@ -1,5 +1,6 @@
+@import '../../styles/variables.scss';
 .paragraph {
-  color: var(--pure-white);
+  color: $pure-white;
   text-overflow: ellipsis;
   &::first-letter {
     text-transform: capitalize;

@@ -1,11 +1,23 @@
+@import '../styles/variables.scss';
+
 .layout {
-  /* background-color: var(--warm-gray); */
-  margin-top: 98px;
+  margin: auto;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(12, 1fr);
+  grid-template-rows: repeat(9, auto);
   grid-column-gap: 20px;
   grid-row-gap: 20px;
-  width: 1300px;
-  height: 768px;
+  width: 90%;
+  height: auto;
+  @media screen and (min-width: $md) {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+  }
+  @media screen and (min-width: $xl) {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    // margin: 98px 0px;
+    width: 1300px;
+    height: 768px;
+  }
 }
